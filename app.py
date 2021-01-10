@@ -43,11 +43,19 @@ def show_user_profile():
 
 			else:
 				captureRes = {'isErrorCapture':'true',
-					  'messageCapture':'requered jpg image',					  
+					  'messageCapture':'requered jpg image',
+					  'dataCapture':'error',
+					  'detected_logo': 'nologo',					  
+					  'reslogoCapture':{'good_maches': 0,
+                                    'match': 0},
 					  'statusCodeCapture':400}
 		else:
 			captureRes = {'isErrorCapture':'true',
-					  'messageCapture':'An image input is required',					  
+					  'messageCapture':'An image input is required',
+				      	  'dataCapture':'error',
+					  'detected_logo': 'nologo',					  
+					  'reslogoCapture':{'good_maches': 0,
+                                    'match': 0},
 					  'statusCodeCapture':400}
 
 	
